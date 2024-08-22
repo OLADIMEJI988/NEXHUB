@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+@layer base{
+    section {
+        display: grid;
+        position: relative;
+        height: 100vh;
+        background-color: blue;
+    
+    }
+    section::before {
+        background-size: cover;
+        content: '';
+        position: absolute;
+        inset: 0;
+        opacity: 2;
+    }
+} */
+
+@layer base{
+    .filter {
+        filter: opacity(0.1);
+    }
+    .hover {
+        transform: scale(0.9);
+        z-index: 2;
+    }
+    .transition {
+        transition: 1s;
+    }
+    .hover2 {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+    /* .overlay {
+        position: absolute;
+        z-index: 1;
+        left: -30px;
+        top: 3px;
+    } */
+}
